@@ -6,6 +6,11 @@ function display()
 
 function sumToInputtedNumber() {
     let textbox = parseInt(document.getElementById("textbox_02").value);
+    if (isNaN(textbox))
+    {
+        document.getElementById("sum").innerHTML = "Invalid input. Please enter a number.";
+        return;
+    }
     let output = 0;
     for (let i=1; i<=textbox; i+=1)
       output = output + i;

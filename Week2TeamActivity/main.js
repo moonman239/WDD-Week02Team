@@ -1,4 +1,4 @@
-function writeContent() {
+function sumToInputtedNumber() {
     let textbox = parseInt(document.getElementById("textbox").value);
     let output = 0;
     for (let i=1; i<=textbox; i+=1)
